@@ -1,0 +1,77 @@
+:root {
+	--background: #EDEEF7;
+	--gray: #EDEEF7;
+	--white: #ffffff;
+	--poppins: 'Poppins', sans-serif;
+	--shadow-opacity: 0.30;
+	--blur: 10px;
+}
+
+
+body {
+	font-family: var(--poppins), sans-serif;
+	font-size: 1rem;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#main-container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 100%;
+	max-width: 550px;
+	margin: auto;
+	padding: 50px;
+	background: rgba( 255, 255, 255, 0.25 );
+	backdrop-filter: blur(var(--blur));
+	border-radius: 10px;
+	border: 1px solid rgba(white, 0.08);
+	filter:  drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));
+}
+
+.entry-field {
+  height: 50px;
+  padding: 10px;
+  border: none;
+}
+
+.warning {
+	font-size: 16px;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.tasks-section {
+  display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.task-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 60px;
+	padding: 16px;
+	background-color: var(--white);
+	border-radius: 24px;
+	font-size: 16px;
+	z-index: 1;
+	
+}
