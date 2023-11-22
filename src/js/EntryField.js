@@ -8,7 +8,7 @@ export default class EntryField {
     this._element = element;
     this.filterHandler = null;
     this.createHandler = null;
-    this._element.addEventListener("input", this.onFilter);
+    this._element.addEventListener("input", (event) => this.onFilter(event));
     this._element.addEventListener("keydown", this.onCreate);
     this.warningEl = document.querySelector(".warning");
   }
